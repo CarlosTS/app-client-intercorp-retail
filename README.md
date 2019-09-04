@@ -6,22 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+##Indicaciones
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Descricion de la aplicación
+-Ingreso de clientes, cada vez que se realiza un ingreso , en el formulario de abajo se puede          visualizar el promedio y la desviacion estándar de los clientes ingresados
+-Actualmente no existen clientes ingresados.
+-En la pestaña "Análisis", contiene un buscador de clientes, en el cual se puede encontrar el cliente  ingresado anteriormente y poder visualizar su posible edad de muerte.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Espero sea entendible, gracias =D
