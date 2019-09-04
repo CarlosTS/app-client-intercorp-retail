@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-content">
+      <span class="card-title"><strong>Búsqueda de clientes</strong></span>
+      <form class="col s6">
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" (input)="filterByLastname($event.target.value)">
+            <label> Apellido </label>
+          </div>
+        </div>
+      </form>
+      <div> (*) No necesitas un boton buscar, es automatico</div>
+    </div>
+</div>
+
+<div class="card">
+  <div class="card-content">
+    <strong class="card-title">Lista de clientes</strong>
+    <table>
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Fecha Nac</th>
+              <th>Edad Muerte</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor= "let cliente of clientList">
+            <td>{{ cliente.nombre }}</td>
+            <td>{{ cliente.apellido }}</td>
+            <td>{{ cliente.edad }}</td>
+            <td>{{ cliente.fecha_nac }}</td>
+            <td>{{ cliente.edadMuerte }}</td> 
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>

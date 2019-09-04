@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title"><strong>Creación de clientes</strong></span>
+    <form (ngSubmit)="onGuardarCliente(formNew)" #formNew="ngForm" class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input [(ngModel)]="client.nombre" #nombre="ngModel" type="text" name="nombre" id="nombre" placeholder="Nombre">
+          <label> Nombre </label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="client.apellido" #apellido="ngModel" type="text" name="apellido" id="apellido" placeholder="Apellido">
+          <label> Apellido </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input [(ngModel)]="client.edad" #edad="ngModel" type="number" name="edad" id="edad" placeholder="Edad">
+          <label> Edad </label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="client.fecha_nac" #fecha_nac="ngModel" type="text" name="fecha_nac" id="fecha_nac" placeholder="Fecha de Nacimiento">
+          <label> Fecha Nac. </label>
+        </div>
+        <button class="btn waves-effect waves-light right blue" type="submit" name="action">Guardar
+            <i class="material-icons right">send</i>
+        </button>
+        <br>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-container">
+      <div class="row">
+          <ul class="collection">
+            <li class="collection-item">
+              <strong>Estadísticas de clientes</strong>
+              <br>
+                <blockquote>Promedio de edad</blockquote>
+                <div class="container center">
+                  <strong>{{ promedio }}</strong>
+                </div>
+              <br>
+                <blockquote>Desviación estándar</blockquote>
+                <div class="container center">
+                  <strong>{{ std }}</strong>
+                </div>
+              <br>
+            </li>
+          </ul>
+      </div>
+  </div>
+</div>

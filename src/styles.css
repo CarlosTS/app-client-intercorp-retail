@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.fix-color{
+    background-color: transparent;
+    height: 80px;
+}
+
+.item-link {
+    color: #0E67B3 !important; 
+}
